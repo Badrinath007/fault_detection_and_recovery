@@ -49,7 +49,6 @@ fault_detection_recovery/
 ├── axi_lite_slave.v     # AXI4-Lite register interface (6-bit addr, 32-bit data)
 ├── fdrc_top.v           # Top-level integration
 ├── tb_fdrc_top.v        # Directed testbench
-└── fdrc.sdc             # Timing constraints (20 ns / 50 MHz clock)
 ```
 
 ---
