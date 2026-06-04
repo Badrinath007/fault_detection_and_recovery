@@ -36,21 +36,6 @@ recover_ack ───────►│         → WAIT_ACK → SAFE_MODE      
   AXI4-Lite bus     │  log count, control, timeout, retry     │─── retry_cfg[7:0]
                     └─────────────────────────────────────────┘
 ```
-
----
-
-## File structure
-
-```
-fault_detection_recovery/
-├── fault_monitor.v      # Heartbeat watchdog and error flag detector
-├── recovery_fsm.v       # 5-state recovery FSM with retry and escalation logic
-├── fault_logger.v       # 16-entry hardware flight data recorder
-├── axi_lite_slave.v     # AXI4-Lite register interface (6-bit addr, 32-bit data)
-├── fdrc_top.v           # Top-level integration
-├── tb_fdrc_top.v        # Directed testbench
-```
-
 ---
 
 ## Module descriptions
